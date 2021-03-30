@@ -16774,9 +16774,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "lZw" = (
-/obj/machinery/camera{
+/obj/machinery/camera/autoname{
 	dir = 1;
-	network = list("BoS")
+	name = "Gate Camera";
+	network = list("BoS");
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
@@ -21547,6 +21549,13 @@
 "pGa" = (
 /turf/closed/wall/f13/wood/interior,
 /area/f13/city)
+"pHc" = (
+/obj/structure/rack,
+/obj/item/storage/box/disks_plantgene,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "pHh" = (
 /obj/structure/sign/poster/prewar/poster94,
 /turf/closed/wall/f13/wood/house,
@@ -24309,10 +24318,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/water{
-	desc = "Deep, poorly filtered gardening water.";
-	name = "stagnant water"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "rOp" = (
 /obj/structure/table/wood,
@@ -24531,7 +24537,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "rWQ" = (
-/obj/structure/rack,
+/obj/machinery/plantgenes,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -33315,14 +33321,6 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/farm)
-"xZQ" = (
-/obj/structure/simple_door,
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/structure/barricade/bars,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood)
 "yao" = (
 /obj/structure/closet/fridge,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -56774,7 +56772,7 @@ wKo
 erY
 koD
 gKG
-rWQ
+pHc
 rJU
 rJU
 cKN
@@ -68924,7 +68922,7 @@ gcK
 gcK
 gcK
 iFI
-xZQ
+oAB
 oAB
 oAB
 qPL
@@ -74061,9 +74059,9 @@ seE
 tAN
 seE
 rOo
-sgw
-sgw
-sgw
+gyd
+gyd
+gyd
 rOo
 tAN
 seE
@@ -75861,7 +75859,7 @@ sgw
 sgw
 gNe
 tAN
-sgw
+gyd
 seE
 oVv
 tAN

@@ -889,7 +889,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_PARTS
 	always_availible = FALSE
-
+/*
 /datum/crafting_recipe/flux
 	name = "Flux capacitor"
 	result = /obj/item/advanced_crafting_components/flux
@@ -976,3 +976,4 @@
 	subcategory = CAT_PARTS
 	always_availible = FALSE
 
+*/

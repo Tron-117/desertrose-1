@@ -119,6 +119,8 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Chief",
 "Shaman",
 "Head Hunter",
+"Druid",
+"Hunter",
 
 "Followers Administrator",
 "Followers Doctor",
@@ -290,8 +292,10 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 	"Chief",
 	"Shaman",
 	"Head Hunter",
+	"Druid",
 	"Villager",
-	"Hunter"
+	"Hunter",
+	"Spirit-Pledged"
 ))
 
 GLOBAL_LIST_INIT(followers_command_positions, list(

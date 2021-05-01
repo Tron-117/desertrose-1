@@ -113,24 +113,6 @@
 							"NCR Ranger"
 						)
 
-/datum/gear/head/ncr_flapcap
-	name = "NCR field cap"
-	path = /obj/item/clothing/head/f13/ncr_flapcap
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty"
-						)
-
 /datum/gear/head/steelpot_goggles
 	name = "NCR storm helmet"
 	path = /obj/item/clothing/head/f13/ncr/steelpot_goggles
@@ -180,7 +162,7 @@ datum/gear/head/steelpot_bandolier
 						)
 
 datum/gear/head/steelpot_patriot
-	name = "NCR bandolier helmet"
+	name = "NCR patriot helmet"
 	path = /obj/item/clothing/head/f13/ncr/steelpot_patriot
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
@@ -195,9 +177,27 @@ datum/gear/head/steelpot_patriot
 							"NCR Trooper",
 						)
 
-/datum/gear/head/ncr_flapcap
+/datum/gear/head/ncr_slouch
 	name = "NCR slouch hat"
 	path = /obj/item/clothing/head/f13/ncr_slouch
+	restricted_desc = "NCR"
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
+							"NCR Lieutenant",
+							"NCR Sergeant",
+							"NCR Corporal",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
+							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Off-Duty"
+						)
+
+/datum/gear/head/ncr_flapcap
+	name = "NCR field cap"
+	path = /obj/item/clothing/head/f13/ncr_flapcap
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",

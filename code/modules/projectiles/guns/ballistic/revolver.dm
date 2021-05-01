@@ -510,6 +510,9 @@
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	fire_delay = 3
 	can_scope = TRUE
+	scope_state = "revolver_scope"
+	scope_x_offset = 6
+	scope_y_offset = 24
 
 /obj/item/gun/ballistic/revolver/m29/alt
 	item_state = "44magnum"
@@ -564,15 +567,6 @@
 			extra_penetration = 0.1
 			to_chat(user, "<span class='notice'>You switch to single-shot fire.</span>")
 	update_icon()
-
-/obj/item/gun/ballistic/revolver/m29/scoped
-	name = "\improper .44 magnum revolver"
-	icon_state = "scoped_m29"
-	desc = "Being that this is the most powerful handgun in the world, and can blow your head clean-off, you've got to ask yourself one question. Do I feel lucky? Well, do ya punk? Now with a scope!"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_scope = FALSE
 
 /obj/item/gun/ballistic/revolver/m29/snub
 	name = "\improper snubnose .44 magnum revolver"
@@ -675,13 +669,25 @@
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 	fire_delay = 4
 
-/obj/item/gun/ballistic/revolver/sequoia/scoped
+/obj/item/gun/ballistic/revolver/sequoia/bayonet
+	name = "bayoneted ranger sequoia"
+	desc = "This large, double-action revolver is a rare, scopeless variant of the hunting revolver. It is used exclusively by the New California Republic Rangers. This revolver features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' This one has a bayonet on it."
+	icon_state = "sequoia_b"
+	item_state = "sequoia"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
+	fire_sound = 'sound/f13weapons/sequoia.ogg'
+	fire_delay = 4
+
+/obj/item/gun/ballistic/revolver/hunting
 	name = "hunting revolver"
 	desc = "A scoped double action revolver chambered in 45-70."
 	icon_state = "hunting_revolver"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
+	fire_sound = 'sound/f13weapons/sequoia.ogg'
+	can_scope = TRUE
+	scope_state = "revolver_scope"
+	scope_x_offset = 9
+	scope_y_offset = 20
 
 /obj/item/gun/ballistic/revolver/zipgun
 	name = "zipgun"
@@ -710,7 +716,7 @@
 
 /obj/item/gun/ballistic/revolver/police
 	name = "police pistol"
-	desc = "An old pre-war double action police revolver. Uses .357 and .38 special rounds."
+	desc = "An old pre-war double action police revolver. Uses .357 rounds."
 	icon_state = "police"
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38

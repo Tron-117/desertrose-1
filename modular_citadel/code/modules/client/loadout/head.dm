@@ -79,19 +79,8 @@
 	name = "NCR sapper beret"
 	path = /obj/item/clothing/head/beret/ncr_sapper
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Specialist",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
+	restricted_roles = list("NCR Combat Engineer",
+							"NCR Off-Duty"
 						)
 
 /datum/gear/head/ncr_cap
@@ -100,17 +89,17 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
+							"NCR Medical Officer",
+							"NCR Sergeant First Class",
 							"NCR Lieutenant",
-							"NCR First Sergeant",
 							"NCR Sergeant",
 							"NCR Corporal",
-							"NCR Specialist",
+							"NCR Combat Engineer",
+							"NCR Combat Medic",
 							"NCR Trooper",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Recruit"
 						)
 
 /datum/gear/head/steelpot_goggles
@@ -127,6 +116,8 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
 						)
 
 /datum/gear/head/steelpot_gambler
@@ -143,6 +134,8 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
 						)
 
 datum/gear/head/steelpot_bandolier
@@ -159,6 +152,8 @@ datum/gear/head/steelpot_bandolier
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
 						)
 
 datum/gear/head/steelpot_patriot
@@ -175,71 +170,53 @@ datum/gear/head/steelpot_patriot
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Rear Echelon",
+							"NCR Recruit"
 						)
 
 /datum/gear/head/ncr_recon
 	name = "NCR recon beret"
 	path = /obj/item/clothing/head/beret/ncr_recon
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Specialist",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
+	restricted_roles = list("NCR Off-Duty")
 
 /datum/gear/head/ncr_scout
 	name = "NCR scout beret"
 	path = /obj/item/clothing/head/beret/ncr_scout
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Specialist",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
+	restricted_roles = list("NCR Ranger",
+							"NCR Off-Duty")
 
 /datum/gear/head/ncr_campaign
 	name = "NCR campaign hat"
 	path = /obj/item/clothing/head/f13/ncr_campaign
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR First Sergeant",
-						)
+	restricted_roles = list("NCR Sergeant First Class",
+						"NCR Off-Duty")
 
 /datum/gear/head/ncr_stetson
 	name = "NCR air cavalry stetson"
 	path = /obj/item/clothing/head/f13/ncr_stetson
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR First Sergeant",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Specialist",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
+	restricted_roles = list("NCR Off-Duty")
+
+/datum/gear/head/bos_beret
+	name = "Brotherhood of Steel beret"
+	path = /obj/item/clothing/head/f13/boscap/beret
+	restricted_desc = "BoS"
+	restricted_roles = list(
+							"Head Paladin",
+							"Head Knight",
+							"Head Scribe",
+							"Star Paladin",
+							"Star Knight",
+							"Proctor",
+							"Paladin",
+							"Knight",
+							"Scribe",
+							"Initiate",
+							"BoS Off-Duty"
+	)
 
 /datum/gear/head/wkepi
 	name = "white kepi"

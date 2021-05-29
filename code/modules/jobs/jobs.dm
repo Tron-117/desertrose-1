@@ -52,10 +52,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Legion Centurion",
 	"Legion Venator",
 
-	"NCR Captain",
-	"NCR Lieutenant",
-	"NCR First Sergeant",
-
 	"Overseer",
 	"Chief of Security",
 
@@ -100,14 +96,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Auxilia",
 "Legion Slave",
 
-"NCR Captain",
-"NCR Lieutenant",
-"NCR First Sergeant",
-"NCR Sergeant",
-"NCR Corporal",
-"NCR Specialist",
-"NCR Trooper",
-
 "Mayor",
 "Sheriff",
 "Deputy",
@@ -151,10 +139,6 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Legion Explorer",
 "Auxilia",
 "Legion Slave",
-
-"NCR Sergeant",
-"NCR Corporal",
-"NCR Specialist",
 
 "Deputy",
 "Shopkeeper",
@@ -241,30 +225,41 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Slave"
 ))
 
-GLOBAL_LIST_INIT(ncr_command_positions, list(
-	"NCR Captain",
-	"NCR Lieutenant",
-	"NCR First Sergeant",
-	"NCR Veteran Ranger"
-))
-
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
-	"NCR Veteran Ranger"
+	"NCR Veteran Ranger",
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
-	"NCR Ranger"
+	"NCR Ranger",
+))
+
+GLOBAL_LIST_INIT(ncr_leadership_positions, list(
+	"NCR Lieutenant",
+	"NCR Sergeant First Class",
+))
+
+GLOBAL_LIST_INIT(ncr_general_positions, list(
+	"NCR Medical Officer",
+	"NCR Sergeant",
+	"NCR Corporal",
+	"NCR Combat Medic",
+	"NCR Combat Engineer",
+	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Lieutenant",
-	"NCR First Sergeant",
+	"NCR Medical Officer",
+	"NCR Sergeant First Class",
 	"NCR Sergeant",
 	"NCR Corporal",
-	"NCR Specialist",
+	"NCR Combat Medic",
+	"NCR Combat Engineer",
 	"NCR Trooper",
 	"NCR Rear Echelon",
+	"NCR Recruit",
 	"NCR Off-Duty",
+	"NCR Veteran Ranger",
 	"NCR Ranger"
 ))
 
@@ -341,7 +336,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR First Sergeant","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
 
 
 ))

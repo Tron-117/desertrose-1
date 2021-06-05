@@ -202,7 +202,7 @@
 
 /obj/item/clothing/suit/armor/f13/ahp_suit
 	name = "highway patrol jacket"
-	desc = "(V) An old police motorcycle jacket a gold badge with the logo of the 'Arizona Department of Public Safety'."
+	desc = "(IV) An old police motorcycle jacket a gold badge with the logo of the 'Arizona Department of Public Safety'."
 	icon_state = "ahp_suit"
 	item_state = "ahp_suit"
 	body_parts_covered = CHEST|ARMS
@@ -399,6 +399,12 @@
 	slowdown = 0.16
 	armor = list("tier" = 9, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 90, "fire" = 90, "acid" = 0, "wound" = 60)
 
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos
+	name = "Brotherhood T-45d power armor"
+	desc = "(VIII) A set of T-45d power armor put into use by the Brotherhood of Steel."
+	icon_state = "t45dbos"
+	item_state = "t45dbos"
+
 /obj/item/clothing/suit/armor/f13/power_armor/midwest
 	name = "midwestern power armor"
 	desc = "(IX) This set of power armor once belonged to the Midwestern branch of the Brotherhood of Steel, and now resides here."
@@ -426,6 +432,12 @@
 	item_state = "t51tesla"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
 	armor = list("tier" = 10, "energy" = 70, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+
+/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
+	name = "Brotherhood T-51b power armor"
+	desc = "(IX) A set of T-51b power armor put into use by the Brotherhood of Steel."
+	icon_state = "t51bbos"
+	item_state = "t51bbos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/wbos
 	name = "Washington power armor"
@@ -465,6 +477,12 @@
 	slowdown = 0.15
 	armor = list("tier" = 10, "linelaser" = 25, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 	var/hit_reflect_chance = 20
+
+/obj/item/clothing/suit/armor/f13/power_armor/t60/bos
+	name = "Brotherhood T-60 power armor"
+	desc = "(X) A set of T-60 power armor put into use by the Brotherhood of Steel."
+	icon_state = "t60bos"
+	item_state = "t60bos"
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
@@ -790,9 +808,15 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant/diocoat
+	name = "NCR officer greatcoat"
+	desc = "(VII) A privately-purchased greatcoat made from stiff felt with patches and pins designating an officer of the NCRA."
+	icon_state = "diocoat"
+	item_state = "diocoat"
+
 /obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
 	name = "Marlow gang overcoat"
-	desc = "(IV) A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
+	desc = "(IV) A heavy red leather overcoat littered with aged bullet holes and frays from regular wear-and-tear."
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	icon_state = "marlowsuit"
 	item_state = "marlowsuit"

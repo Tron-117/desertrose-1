@@ -62,7 +62,7 @@ Colonel
 	shoes 		= /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory 	= /obj/item/clothing/accessory/ncr
 	head 		= /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
-	belt        = /obj/item/storage/belt/military/assault/ncr
+	belt        = /obj/item/storage/belt/military/assault/ncr/crossbelt
 	glasses 	= /obj/item/clothing/glasses/sunglasses/big
 	suit_store  = /obj/item/gun/ballistic/automatic/marksman
 	gloves      = /obj/item/clothing/gloves/f13/leather
@@ -88,7 +88,6 @@ Captain
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
 	req_admin_notify = 1
-	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
 
 	loadout_options = list(
@@ -130,7 +129,7 @@ Captain
 	head 		= /obj/item/clothing/head/beret/ncr
 	shoes 		= /obj/item/clothing/shoes/f13/military/leather
 	gloves 		= /obj/item/clothing/gloves/f13/leather
-	belt 		= /obj/item/storage/belt/military/assault/ncr
+	belt 		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	l_hand 		= /obj/item/gun/ballistic/automatic/service/r82
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/m556/rifle/assault=3,
@@ -151,7 +150,7 @@ Captain
 	name = "Pistoleer Officer"
 	head =		/obj/item/clothing/head/f13/ncr_cap
 	gloves =	/obj/item/clothing/gloves/f13/leather
-	belt = 		/obj/item/storage/belt/military/assault/ncr
+	belt = 		/obj/item/storage/belt/military/assault/ncr/crossbelt
 	l_hand =	/obj/item/gun/ballistic/automatic/greasegun
 	backpack_contents = list(
 	/obj/item/ammo_box/magazine/greasegun=3,
@@ -167,9 +166,11 @@ Lieutenant
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
+	req_admin_notify = 1
 	description = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "Captain and above"
-	selection_color = "#fff5cc"
+	selection_color = "#ffeeaa"
+	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
@@ -187,7 +188,7 @@ Lieutenant
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	suit_store	= /obj/item/gun/ballistic/automatic/service/r82
-	belt		= /obj/item/storage/belt/military/assault/ncr
+	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/ninemil=1, \
@@ -235,7 +236,7 @@ Medical Officer
 	gloves		= /obj/item/clothing/gloves/color/latex/nitrile
 	ears 		= /obj/item/radio/headset/headset_ncr_com
 	suit 		= /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
-	belt		= /obj/item/storage/belt/military/assault/ncr
+	belt		= /obj/item/storage/belt/military/assault/ncr/crossbelt
 	r_hand 		= /obj/item/storage/backpack/duffelbag/med/surgery
 	mask 		= /obj/item/clothing/mask/surgical
 	backpack_contents = list(
@@ -265,9 +266,11 @@ Sergeant First Class
 	flag = F13FIRSTSERGEANT
 	total_positions = 1
 	spawn_positions = 1
+	req_admin_notify = 1
 	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Lieutenant as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
+	head_announce = list("Security")
 	display_order = JOB_DISPLAY_ORDER_FIRSTSERGEANT
 	outfit = /datum/outfit/job/ncr/f13firstsergeant
 
@@ -594,7 +597,6 @@ Rear Echelon
 	description = "You are a detachment of partially trained troops sent to bolster the Yuma Garrison. You have the same duties as a Trooper but act as a reserve force. Follow are legal and valid orders from everyone that outranks you."
 	supervisors = "Troopers and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
 	display_order = JOB_DISPLAY_ORDER_NCR_RECRUIT
 	outfit = /datum/outfit/job/ncr/f13ncrrecruit
 
@@ -662,7 +664,8 @@ Veteran Ranger
 	loadout_options = list(
 	/datum/outfit/loadout/vrclassic, //AMR and Sequoia,
 	/datum/outfit/loadout/vrlite, //Rangemaster and Sequoia,
-	/datum/outfit/loadout/vrbrush //Scoped Brushgun and Sequoia
+	/datum/outfit/loadout/vrbrush, //Scoped Brushgun and Sequoia
+	/datum/outfit/loadout/vrassault
 	)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
